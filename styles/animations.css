@@ -66,13 +66,13 @@
   transition: fill 0.3s linear;
 }
 
-.is-liked .heart {
-  animation-name: heart;
+.is-liked .rising {
+  animation-name: rising;
   animation-delay: 0.1s;
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
-  animation-direction: normal;
+  animation-direction: alternate;
   transform-origin: center;
 }
 
@@ -82,11 +82,11 @@
   animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
-  animation-direction: normal;
+  animation-direction: alternate;
   transform-origin: center;
 }
 
-@keyframes pointer {
+@keyframes moving {
   0% {
     inset-inline-start: -20px;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@keyframes heart {
+@keyframes rising {
   0% {
     transform: scale(1);
   }
